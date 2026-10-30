@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Classifier</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Teachable Machine library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Image Classifier</h1>
+        <p class="subtitle">Powered by Google Teachable Machine</p>
+
+        <div class="camera-box">
+            <div id="webcam-container"></div>
+        </div>
+
+        <button id="start-btn" onclick="init()">
+            Start Camera
+        </button>
+
+        <h2>Prediction Results</h2>
+
+        <div id="result">
+            <p>Click Start Camera to begin classification.</p>
+        </div>
+
+        <div id="label-container"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
